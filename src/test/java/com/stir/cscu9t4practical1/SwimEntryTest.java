@@ -1,5 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
+*To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 /**
  *
- * @author saemundur
+ * @author cementer
  */
 public class SwimEntryTest {
     
@@ -138,15 +138,15 @@ public class SwimEntryTest {
     @Test
     public void testGetWhere() {
         System.out.println("getWhere");
-        Entry instanceA = new SwimEntry("Alice", 1, 2, 2003, 0, 16, 7, 3,"outdoors");
+        SwimEntry instanceA = new SwimEntry("Alice", 1, 2, 2003, 0, 16, 7, 3,"outdoors");
         String expResultA = "outdoors";
         String result = instanceA.getWhere();
         assertEquals(expResultA, result);
         
-        Entry instanceB = new SwimEntry("Alice", 1, 2, 2003, 0, 16, 7, 3,"pool");
+        SwimEntry instanceB = new SwimEntry("Alice", 1, 2, 2003, 0, 16, 7, 3,"pool");
         String expResultB = "in a pool";
-        String result = instanceB.getWhere();
-        assertEquals(expResultB, result);
+        String result1 = instanceB.getWhere();
+        assertEquals(expResultB, result1);
     }
     /**
      * Test of getEntry method, of class SwimEntry.
@@ -159,5 +159,4 @@ public class SwimEntryTest {
         String result = instance.getEntry();
         assertEquals(expResult, result);
     }
-    
 }

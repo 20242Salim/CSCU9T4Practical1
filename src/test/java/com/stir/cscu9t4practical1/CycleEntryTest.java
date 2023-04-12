@@ -12,10 +12,6 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- *
- * @author saemundur
- */
 public class CycleEntryTest {
     
     public CycleEntryTest() {
@@ -139,9 +135,9 @@ public class CycleEntryTest {
     @Test
     public void testGetTerrain() {
         System.out.println("getTerrain");
-        Entry instance = new CycleEntry("Alice", 1, 2, 2003, 0, 16, 7, 3, "asphalt", "moderate");
+        CycleEntry instance = new CycleEntry("Alice", 1, 2, 2003, 0, 16, 7, 3, "asphalt", "moderate");
         String expResult = "asphalt";
-        String result = instance.getTerrain();
+        String result = instance.getterrain();
         assertEquals(expResult, result);
     }
 
@@ -151,9 +147,9 @@ public class CycleEntryTest {
     @Test
     public void testGetTempo() {
         System.out.println("getTempo");
-        Entry instance = new CycleEntry("Alice", 1, 2, 2003, 0, 16, 7, 3, "asphalt", "moderate");
+        CycleEntry instance = new CycleEntry("Alice", 1, 2, 2003, 0, 16, 7, 3, "asphalt", "moderate");
         String expResult = "moderate";
-        String result = instance.getTempo();
+        String result = instance.gettempo();
         assertEquals(expResult, result);
     }
     
@@ -168,5 +164,4 @@ public class CycleEntryTest {
         String result = instance.getEntry();
         assertEquals(expResult, result);
     }
-    
 }
